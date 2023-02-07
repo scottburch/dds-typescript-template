@@ -1,9 +1,10 @@
 import React, {CSSProperties} from 'react';
-import {Counter} from "./components/counter";
+import {Counter} from "./components/Counter";
 import {usePistolAuth} from "@scottburch/pistol";
 import {Login} from "./components/Login";
 import {Welcome} from "./components/Welcome";
 import {ConnectPeerBtn} from "./components/ConnectPeerBtn";
+import {CountBtn} from "./components/CountBtn";
 
 
 export const Main: React.FC = () => {
@@ -19,12 +20,11 @@ export const Main: React.FC = () => {
             <p>You can use the buttons below to connect to either of the two testnet nodes</p>
             <ConnectPeerBtn peerNo={0}/>
             <ConnectPeerBtn peerNo={1}/>
-            {auth.pubKey ? (
-                <>
-                    <Welcome/>
-                    <Counter/>
-                </>
-            ) : <Login/>}
+            <h4>
+                <Counter/>
+            </h4>
+            {auth.pubKey ? <CountBtn/> : null}
+            {auth.pubKey ? <Welcome/> : <Login/>}
         </div>
     );
 };
