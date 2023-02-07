@@ -28,7 +28,7 @@ describe('Application tests', () => {
     )
 
     const launchApp = () => of(playwright['chromium']).pipe(
-        switchMap(f => f.launch({headless: false, devtools: true})),
+        switchMap(f => f.launch({headless: !!process.env.CI})),
         switchMap(browser => browser.newContext()),
         switchMap(ctx => ctx.newPage()),
         switchMap(page => page.goto(`http://localhost:1234`).then(() => page))
