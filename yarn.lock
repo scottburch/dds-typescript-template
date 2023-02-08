@@ -739,10 +739,10 @@
     chrome-trace-event "^1.0.2"
     nullthrows "^1.1.1"
 
-"@scottburch/pistol@^1.1.6":
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/@scottburch/pistol/-/pistol-1.1.6.tgz#2119b14099d1fbab50f26548eb16cebd74fc1b25"
-  integrity sha512-PPNyo1OxnWTftFu/5OKtMJpjwa/gkROrXaOCC9/wZWKXAxBTOFytLxCbyENCiMuEXDMfh85tTQniXHUJFZ/ALw==
+"@scottburch/pistol@^1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@scottburch/pistol/-/pistol-1.1.7.tgz#369d192914528157b22b6c4feeae7735c754dddd"
+  integrity sha512-aOv4eLWY43UWtWA3k4Uo907Z07nw2n2x3Loouict+gh/v2kxeisWDB64zKdKMcnbiprufqP+LDKa0EN7iaLDQQ==
   dependencies:
     "@types/chai" "^4.3.4"
     "@types/ip" "^1.1.0"
