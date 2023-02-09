@@ -739,8 +739,10 @@
     chrome-trace-event "^1.0.2"
     nullthrows "^1.1.1"
 
-"@scottburch/pistol@../core/bundle":
-  version "1.1.6"
+"@scottburch/pistol@^1.1.21":
+  version "1.1.21"
+  resolved "https://registry.yarnpkg.com/@scottburch/pistol/-/pistol-1.1.21.tgz#b4ec016bee4341853ace3da1ab2b1652933e40b5"
+  integrity sha512-vLBbrrSamExLfmrR3EYZwE9Pk3wp1AFVmFEW/gLHbFAQ6JT+7DP2Dmsck2hFPkeTCWO4/uehLkChIp8Yh5qIzQ==
   dependencies:
     "@types/chai" "^4.3.4"
     "@types/ip" "^1.1.0"
